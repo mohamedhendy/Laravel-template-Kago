@@ -77,4 +77,4 @@ Use `resources/views/front/layout.blade.php` as reference.
 
 - Default values:  
   The folder `resources/lang/en/pages/` contains the default values.
-  The key is constructed like this `content-name` + `-` + `section-name`.
+  The key is constructed like this `content-name` + `-` + `section-name`. 
