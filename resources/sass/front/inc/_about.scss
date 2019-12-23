@@ -1,0 +1,44 @@
+.about-page {
+  background-color: $section-bg;
+  .first-section {
+    padding: 4rem 0;
+    h1 {
+      padding-top: 4rem;
+      color: $main-color;
+    }
+  }
+  div {
+    color: $sub-main-color;
+  }
+  .content-section {
+    padding: 4rem 0;
+    @media (max-width: 575.98px) {
+      padding: 1rem 0;
+    }
+
+    h3 {
+      color: $sub-title-color;
+    }
+    .content-value {
+      width: 85%;
+      .president-text {
+        width: 70%;
+        text-align: justify;
+      }
+      .president-img {
+        text-align: right;
+        width: 40%;
+      }
+      background-color: $small-section-color;
+      @media (max-width: 991.98px) {
+        width: 100%;
+        .president-text {
+          width: 100%;
+        }
+        .president-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

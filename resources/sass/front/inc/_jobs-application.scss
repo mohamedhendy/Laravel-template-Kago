@@ -1,0 +1,47 @@
+.job-apply {
+  h1 {
+    color: $main-color;
+  }
+  .forms-inputs {
+    background-color: $section-bg;
+    width: 70%;
+    padding: 3rem 7rem;
+    border: 1px solid $main-color;
+    margin-bottom: 3rem !important;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      padding: 1rem 4rem;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+    i {
+      display: inline-block;
+      padding: 10px;
+      margin-right: -33px;
+      z-index: 5;
+      color: $main-color;
+    }
+    .file-icon {
+      margin-right: 0;
+    }
+    label {
+      color: $main-color;
+      font-weight: 600;
+    }
+    .upload {
+      background-color: #fedec5;
+    }
+    .action-btn {
+      margin-top: 1rem;
+    }
+    .action-btn input {
+      @include submitButton;
+     }
+    .hide-input {
+      opacity: 0;
+    }
+  }
+}

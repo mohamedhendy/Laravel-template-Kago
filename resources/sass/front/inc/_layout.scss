@@ -1,0 +1,242 @@
+body {
+  background-color: #fff;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 500;
+  @media (max-width: 575.98px) {
+    font-size: 40px;
+    padding-top: 0 !important;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 50px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 60px;
+  }
+}
+p {
+  text-align: justify;
+}
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  @media (max-width: 575.98px) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 2.5rem;
+  }
+}
+.slider-section ,.third-section {
+  .items-offers {
+    width: 62%;
+    @media (max-width: 991.98px) {
+    width: 85%;
+    }
+    img {
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+    }
+  }
+  .slick-track {
+    padding: 4rem 0;
+    .slick-center {
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.4);
+      z-index: 5;
+    }
+  }
+  .slick-dots li button {
+    background-color: transparent;
+    border: 2px solid $sub-title-color;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $sub-title-color;
+    padding: 1px;
+  }
+  .slick-dots li button:before {
+    color: $white;
+    width: 10px;
+    height: 10px;
+    line-height: 12px;
+    left: 2px;
+  }
+}
+.slick-prev,
+.slick-next {
+  display: none;
+}
+
+body.rtl {
+  ul {
+    padding-right: 0;
+    text-align: right;
+  }
+  .slick-dotted.slick-slider {
+    direction: ltr;
+  }
+  .slick-slide {
+    float: left !important;
+  }
+  .slick-dots {
+    text-align: center !important;
+  }
+  .about-section {
+    .about-schools .second-img {
+      margin-left: 0;
+      margin-right: -8rem;
+      @media (max-width: 575.98px) {
+        margin-right: 0;
+      }
+    }
+  }
+  .contact-form,
+  .felids {
+    i {
+      margin-right: 0 !important;
+      margin-left: -33px;
+    }
+  }
+  input {
+    padding-right: 3rem;
+    padding-left: 5px !important;
+  }
+  .contact-section {
+    .contact-form {
+      .guid-lines {
+        .active::after {
+          right: auto;
+          left: 0;
+          border-right-color: transparent;
+          border-left: 30px solid #fdede3;
+        }
+      }
+    }
+    .follow-div {
+      i {
+        margin: 0 !important;
+      }
+    }
+  }
+  .action-btn,
+  .felids {
+    text-align: center;
+  }
+  .fa-paperclip {
+    margin-left: 0 !important;
+  }
+  .teacher-content {
+    .offset-md-1 {
+      margin-left: 0;
+      margin-right: 8.3333333333%;
+      @media (max-width: 767.98px) {
+        margin-right: 0;
+      }
+
+    }
+    .col-md-6 {
+      text-align: right;
+    }
+    a {
+      margin-right: 20%;
+      margin-left: 0;
+      @media (max-width: 767.98px) {
+        margin-right: 0;
+      }
+    }
+    p {
+      padding-left: 10rem;
+      padding-right: 0;
+      @media (max-width: 991.98px) {
+        padding-left: 0 !important;
+
+      }
+    }
+  }
+  footer {
+    .footer-bottom {
+      .c-right {
+        padding: 10px 0;
+        margin-left: 0 !important;
+        margin-right: auto;
+      }
+    }
+  }
+  .polls {
+    ul {
+      li {
+        label {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .jobs-applications {
+    .stipulations {
+      @media (max-width: 575.98px) {
+        padding: 1rem 1rem 0.2rem 1rem !important ;
+      }
+      ul {
+        li {
+          text-align: justify;
+          &::before {
+            margin-left: 0;
+            margin-right: -1rem;
+          }
+        }
+      }
+    }
+
+    .plus-buttons a {
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 50px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        text-decoration: none;
+        background-color: transparent;
+      }
+      @media (max-width: 768px) {
+        border-radius: 0;
+        margin-bottom: 0.8rem;
+        text-align: center;
+      }
+    }
+    .login-menu {
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      &:hover {
+        background-color: transparent;
+        color: $main-color;
+      }
+    }
+    .register-menu {
+      background-color: $sub-title-color;
+      border: 1px solid $sub-title-color;
+      &:hover {
+        background-color: transparent;
+        color: $sub-title-color;
+      }
+    }
+    .arabic-button {
+      color: $sub-title-color !important;
+      &:hover {
+        text-decoration: none;
+        color: $main-color !important;
+      }
+    }
+  }
+}

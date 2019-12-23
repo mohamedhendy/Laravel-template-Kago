@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - /usr/bin/test -f .env
+    - /opt/cpanel/composer/bin/composer install -n -o -q --no-dev --no-plugins
+    - /opt/cpanel/composer/bin/composer run -n -q --no-dev deploy
+    - /usr/bin/yarn install --silent --non-interactive --ignore-optional --frozen-lockfile
+    - /usr/bin/yarn run production --silent --non-interactive --ignore-optional --frozen-lockfile
+    - /bin/find . -type d -exec /bin/chmod 0755 {} +
+    - /bin/find . -type f -exec /bin/chmod 0644 {} +

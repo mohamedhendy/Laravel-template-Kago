@@ -1,0 +1,101 @@
+nav {
+  background-color: $white;
+  padding: 0 !important;
+  .navbar-brand img {
+    width: 85%;
+    @media (max-width: 575.98px) {
+      width: 80%;
+    }
+  }
+  .center-menu{
+    @media (max-width: 992px) {
+      margin: 0 !important;
+    }
+  }
+  .navbar-nav .nav-link {
+    color: $gray-800 !important;
+    transition: 0.2s all ease-in-out;
+    font-size: .8rem;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+      color: $sub-title-color !important;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      font-size: 0.8rem !important;
+      padding-left: 2px !important;
+      padding-right: 2px !important;
+    }
+    @media (min-width: 1200px) {
+      font-size: 1rem !important;
+    }
+  }
+  .navbar-nav .active {
+    color: $sub-title-color !important;
+  }
+  .nav-item {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (max-width: 1200px) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .navbar-toggler {
+    border: 0 !important;
+  }
+  @media (max-width: 575.98px) {
+    padding: 9px 1rem !important;
+  }
+}
+
+.plus-buttons {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+   a {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: .8rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+    }
+    @media (max-width: 768px) {
+      border-radius: 0;
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+.login-menu {
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  &:hover {
+    background-color: transparent;
+    color: $main-color;
+  }
+}
+.register-menu {
+  background-color: $sub-title-color;
+  border: 1px solid $sub-title-color;
+  &:hover {
+    background-color: transparent;
+    color: $sub-title-color;
+  }
+}
+.arabic-button {
+  color: $sub-title-color !important;
+  &:hover {
+    text-decoration: none;
+    color: $main-color !important;
+  }
+}

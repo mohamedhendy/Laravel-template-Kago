@@ -1,0 +1,68 @@
+footer {
+  .footer {
+    background-color: $main-color;
+    padding: 3.8rem 0 1rem;
+    .footer-log {
+      padding: 2rem 0;
+      > a {
+        color: white;
+        border-radius: 30px;
+        padding: 10px 18px;
+        border: 1px solid;
+        margin-right: 15px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+      }
+      .reg-button {
+        background-color: $dark-orange;
+        border-color: $dark-orange;
+        margin-bottom: 1rem;
+        &:hover {
+          border-color: white;
+          background-color: transparent;
+        }
+      }
+      .login-button {
+        background-color: transparent;
+        border-color: white;
+        &:hover {
+          background-color: $dark-orange;
+          border-color: $dark-orange;
+        }
+      }
+    }
+  }
+  a {
+    color: white;
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: $sub-title-color;
+      text-decoration: none;
+    }
+  }
+  .footer-bottom {
+    background-color: $sub-main-color;
+    padding: 10px 0;
+    .social {
+      > div {
+        padding: 5px;
+        font-size: 1.5rem;
+        margin-right: 5px;
+        a {
+          color: white;
+        }
+      }
+      i {
+        transition: all .2s ease-in-out;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+    .c-right {
+      padding: 10px 0;
+    }
+  }
+}

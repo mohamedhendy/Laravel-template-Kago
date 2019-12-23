@@ -1,0 +1,14 @@
+.thin-scrollbar {
+	@include media-breakpoint-up(sm) {
+		&::-webkit-scrollbar {
+			width: 2px;
+			background-color: $white;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: $white;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $black;
+		}
+	}
+}

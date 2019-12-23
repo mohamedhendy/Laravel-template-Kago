@@ -1,0 +1,27 @@
+version: "3.6"
+
+services:
+
+  httpd:
+    build: ./.docker/httpd
+    depends_on:
+      - database
+    ports:
+      - "80:80"
+    working_dir: /var/www
+    volumes:
+      - ${PWD}:/var/www
+      - ${PWD}/.docker/httpd/httpd.conf:/etc/apache2/sites-available/www.conf
+      - ${PWD}/.docker/httpd/entrypoint.sh:/usr/local/bin/docker-entrypoint
+    entrypoint: docker-entrypoint
+
+  database:
+    image: mariadb:10.4
+    restart: on-failure
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_password
+      MYSQL_DATABASE: db_name

@@ -1,0 +1,16 @@
+h1 {
+  padding-top: 5rem ;
+  color: $main-color;
+  @media (max-width: 768px) {
+  padding-top: 2rem !important ;
+  }
+}
+.gallery {
+  padding: 5rem 0;
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+  }
+  > div {
+    margin-bottom: 30px;
+  }
+}
